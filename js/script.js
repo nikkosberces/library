@@ -15,6 +15,9 @@ function Book(title, author, pages) {
 
 function addNewBook(event) {
   event.preventDefault();
+
+  if (title.value === "" || author.value === "" || pages.value === "") return;
+
   const book = new Book(title.value, author.value, pages.value);
 
   library.push(book);
