@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#root {
+  position: relative;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 1em;
+  gap: 1em;
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  background-color: burlywood;
+  padding: 1em;
+  height: 250px;
+}
+
+.book div {
+  flex: 1;
+}
+
+.book h2 {
+  font-size: 16px;
+  margin-bottom: 0.5em;
+}
+
+.author {
+  font-size: 12px;
+}
+
+.pages {
+  text-align: center;
+  font-size: 10px;
+  font-style: italic;
+}
+
+.add-btn-container {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.add-btn {
+  font-size: 32px;
+  border-radius: 100%;
+  padding: 0.25em;
+  height: 60px;
+  width: 60px;
+}
+
+.add-btn:hover {
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.modal-container {
+  background-color: beige;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 2em;
+}
+
+.modal-container input {
+  height: 32px;
+  width: 320px;
+}
+
+.modal-container button {
+  height: 32px;
+  font-size: 16px;
+}
+
+.add-book-btn:hover {
+  cursor: pointer;
+}

@@ -4,13 +4,75 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Library</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Library App</title>
   </head>
   <body>
-    <header>
-      <h1>Library</h1>
-    </header>
-    <script src="script.js"></script>
+    <div id="root">
+      <section class="header">
+        <h1>Library Webapp</h1>
+        <p>A simple library webapp built with HTML, CSS, and JavaScript</p>
+      </section>
+
+      <hr />
+
+      <section class="main">
+        <article class="book">
+          <div>
+            <h2>HTML and CSS</h2>
+            <p class="author">Jon Duckett</p>
+          </div>
+          <p class="pages">255 pages</p>
+        </article>
+        <article class="book">
+          <div>
+            <h2>A Smarter Way to Learn JavaScript</h2>
+            <p class="author">Mark Myers</p>
+          </div>
+          <p class="pages">256 pages</p>
+        </article>
+        <article class="book">
+          <div>
+            <h2>Head First JavaScript Programming: A Brain-Friendly Guide</h2>
+            <p class="author">Elisabeth Robson</p>
+          </div>
+          <p class="pages">202 pages</p>
+        </article>
+        <article class="book">
+          <div>
+            <h2>Eloquent JavaScript</h2>
+            <p class="author">Marijn Haverbeke</p>
+          </div>
+          <p class="pages">232 pages</p>
+        </article>
+        <article class="book">
+          <div>
+            <h2>JavaScript: The Definitive Guide</h2>
+            <p class="author">David Flanagan</p>
+          </div>
+          <p class="pages">222 pages</p>
+        </article>
+      </section>
+
+      <div id="modal" class="modal">
+        <form class="modal-container">
+          <h2>Add new book</h2>
+          <input id="title" type="text" placeholder="Title" required />
+          <input id="author" type="text" placeholder="Author" required />
+          <input id="pages" type="text" placeholder="Pages" required />
+          <button type="submit" id="add-book-btn" class="add-book-btn">
+            Add
+          </button>
+          <button type="button" id="close-modal" class="cancel-btn">
+            Cancel
+          </button>
+        </form>
+      </div>
+
+      <div class="add-btn-container">
+        <button id="open-modal" class="add-btn">+</button>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
