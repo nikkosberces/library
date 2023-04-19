@@ -47,7 +47,7 @@
 }
 
 .author {
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
 }
 
@@ -90,22 +90,40 @@
   z-index: 999;
 }
 
-.modal-container {
+article {
   background-color: #eefbfb;
   display: flex;
   flex-direction: column;
   gap: 1em;
   padding: 2em;
+  border-radius: 10px;
+}
+
+.modal-container {
+  border: 3px solid #0c0c0c;
+  padding: 25px;
+  border-radius: 10px;
 }
 
 .modal-container input {
+  display: flex;
+  margin: 10px;
   height: 32px;
   width: 320px;
+  border-radius: 10px;
+}
+
+.modal-container h2 {
+  text-align: center;
 }
 
 .modal-container button {
+  align-content: center;
+  margin-left: 25%;
+  width: 50%;
   height: 32px;
   font-size: 16px;
+  border-radius: 10px;
 }
 
 .add-book-btn:hover {

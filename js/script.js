@@ -46,6 +46,7 @@ function appendNewBook(book) {
   const div = document.createElement("div");
 
   const h2 = document.createElement("h2");
+  h2.classList.add("title");
   h2.textContent = book.title;
 
   const author = document.createElement("p");
