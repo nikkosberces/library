@@ -129,3 +129,11 @@ article {
 .add-book-btn:hover {
   cursor: pointer;
 }
+
+.close-btn {
+  display: flex;
+  justify-content: center;
+  margin-left: 240px;
+  background-color: #180235;
+  color: #fff;
+}

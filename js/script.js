@@ -17,7 +17,7 @@ function titleCase(str) {
   str = str.toLowerCase();
   str = str.split(" ");
 
-  for (var i = 0; i < str.length; i++) {
+  for (let i = 0; i < str.length; i++) {
     str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
   }
 
@@ -40,6 +40,10 @@ function addNewBook(event) {
 }
 
 function appendNewBook(book) {
+  const closeBtn = document.createElement("button");
+  closeBtn.classList.add("close-btn");
+  closeBtn.textContent = "x";
+
   const article = document.createElement("article");
   article.classList.add("book");
 
@@ -60,6 +64,7 @@ function appendNewBook(book) {
   pages.classList.add("pages");
   pages.textContent = book.pages;
 
+  article.append(closeBtn);
   article.appendChild(div);
   article.appendChild(pages);
 
